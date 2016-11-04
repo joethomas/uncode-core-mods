@@ -1,0 +1,176 @@
+/*
+Uncode Helper Styles
+Author: Joe Thomas
+Author URI: http://joethomas.co
+*/
+
+/* Typography
+==============================================================================*/
+
+code,
+kbd,
+pre,
+small,
+samp,
+var {
+	font-size: .825em;
+}
+
+code,
+kbd,
+pre,
+samp,
+var {
+	font-family: Monaco, monospace !important;
+}
+
+
+/* Header
+==============================================================================*/
+
+/* Override logo padding */
+
+@media (min-width: 960px) {
+	.col-lg-0.logo-container {
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+}
+
+.logo-container.shrinked {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+
+/* VC Elements
+==============================================================================*/
+
+/* Heading
+------------------------------------------------------------------------------*/
+
+/* Remove hr bottom margin when separator added above heading text */
+.heading-text hr:first-child {
+    margin-bottom: 0;
+}
+
+/* Decrease header top margin when separator added above heading text */
+.heading-text hr:first-child + h1,
+.heading-text hr:first-child + h2,
+.heading-text hr:first-child + h3,
+.heading-text hr:first-child + h4,
+.heading-text hr:first-child + h5,
+.heading-text hr:first-child + h6 {
+	margin-top: .25em;
+}
+
+/* Single Media
+------------------------------------------------------------------------------*/
+
+.uncode-single-media figcaption {
+	line-height: 1.2;
+}
+
+/* Accordion
+------------------------------------------------------------------------------*/
+
+.panel-title {
+	font-size: 1em;
+}
+
+/* !! Need to add Javascript to remove the active class when accordion is
+	manually closed. */
+
+.panel-title.active > a {
+	pointer-events: inherit;
+	cursor: pointer;
+}
+
+/* Buttons
+------------------------------------------------------------------------------*/
+
+/* Revert button transform to normal on small screens */
+
+@media (max-width: 569px) {
+	.btn:not(input),
+	.btn-link:not(input) {
+		-webkit-transform: none;
+		-moz-transform: none;
+		-o-transform: none;
+		-ms-transform: none;
+		transform: none;
+	}
+}
+
+/* Message Box
+------------------------------------------------------------------------------*/
+
+/* Revert message box font-weight to inherit */
+
+.messagebox_text {
+	font-weight: inherit;
+	/*color: inherit;*/
+}
+
+/* Add margin to message box paragraphs */
+
+.messagebox_text p {
+	margin-top: 18px;
+}
+
+.messagebox_text > p:first-child {
+	margin-top: 0;
+}
+
+/* Message Box helper classes */
+
+.messagebox-scroll .messagebox_text,
+.messagebox_text.messagebox-scroll {
+	height: 13.5em;
+	overflow: auto;
+}
+
+.strong .messagebox_text,
+.messagebox-text.strong {
+	font-weight: bold;
+}
+
+
+/* List with Icon
+------------------------------------------------------------------------------*/
+
+/* Fix list icons and text alignment */
+
+ul.icons li {
+	padding-left: 2em;
+}
+
+ul.icons li .fa {
+	margin-left: calc(-1em - 13.5px);
+}
+
+/* Inner Rows
+------------------------------------------------------------------------------*/
+
+.main-container .row-container .row-child .row-inner {
+    padding: 18px 0;
+}
+
+
+/* Forms
+==============================================================================*/
+
+/* Revert form paragraph font-weight */
+
+form p {
+	font-weight: inherit;
+}
+
+
+/* Footer
+==============================================================================*/
+
+footer .footer-center {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}

@@ -156,6 +156,24 @@ ul.icons li .fa {
     padding: 18px 0;
 }
 
+/* WP Custom Menu
+------------------------------------------------------------------------------*/
+
+.post-wrapper .widget .menu-smart.menu-horizontal {
+	text-align: center;
+}
+
+.post-wrapper .widget .menu-smart.menu-horizontal li.menu-item {
+	line-height: 1.75;
+}
+
+
+.post-wrapper .widget .menu-smart.menu-horizontal li.menu-item a {
+	font-size: .75em;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
 
 /* Forms
 ==============================================================================*/

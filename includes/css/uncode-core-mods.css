@@ -21,7 +21,7 @@ kbd,
 pre,
 samp,
 var {
-	font-family: Monaco, monospace !important;
+	font-family: Monaco, 'Menlo Regular', monospace !important;
 }
 
 

@@ -3,13 +3,16 @@
 	Plugin Name: Uncode Core Mods
 	Description: This plugin contains useful modifications for Uncode theme by Undsgn.
 	Plugin URI: https://github.com/joethomas/uncode-core-mods
-	Version: 1.1.0
+	Version: 1.1.1
 	Author: Joe Thomas
 	Author URI: https://github.com/joethomas
 	License: GNU General Public License v3.0
 	License URI: http://www.gnu.org/licenses/gpl-3.0.html
 	Text Domain: uncode-core-mods
 	Domain Path: /languages/
+
+	GitHub Plugin URI: https://github.com/joethomas/uncode-core-mods
+	GitHub Branch: master
 */
 
 // Prevent direct file access
@@ -33,7 +36,7 @@ function joe_ucm_get_plugin_data_version() {
 }
 add_action( 'init', 'joe_ucm_get_plugin_data_version' );
 
-define( 'JOE_UCM_PREFIX', 'joe_ucm_' );
+define( 'JOE_UCM_PREFIX', 'uncode-core-mods' );
 
 
 /* Bootstrap

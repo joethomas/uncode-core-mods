@@ -179,13 +179,35 @@ ul.icons li .fa {
 ==============================================================================*/
 
 /* Revert form paragraph font-weight */
-
 form p {
 	font-weight: inherit;
 }
 
 /* Fix form placeholder color inside .style-dark .style-light. */
-.style-light ::-webkit-input-placeholder {
+
+.style-light ::placeholder {
+	color: #757575 !important;
+}
+
+.style-light ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	color: #757575 !important;
+}
+
+.style-light :-moz-placeholder { /* Firefox 18- */
+	color: #757575 !important;
+	opacity: 1;
+}
+
+.style-light ::-moz-placeholder { /* Firefox 19+ */
+	color: #757575 !important;
+	opacity: 1;
+}
+
+.style-light :-ms-input-placeholder { /* IE */
+	color: #757575 !important;
+}
+
+.style-light ::-ms-input-placeholder { /* IE Edge */
 	color: #757575 !important;
 }
 

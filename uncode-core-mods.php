@@ -3,7 +3,7 @@
 	Plugin Name: Uncode Core Mods
 	Description: This plugin contains useful modifications for Uncode theme by Undsgn.
 	Plugin URI: https://github.com/joethomas/uncode-core-mods
-	Version: 1.1.2
+	Version: 1.1.3
 	Author: Joe Thomas
 	Author URI: https://github.com/joethomas
 	License: GNU General Public License v3.0

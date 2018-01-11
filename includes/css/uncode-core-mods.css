@@ -184,6 +184,11 @@ form p {
 	font-weight: inherit;
 }
 
+/* Fix form placeholder color inside .style-dark .style-light. */
+.style-light ::-webkit-input-placeholder {
+	color: #757575 !important;
+}
+
 
 /* Footer
 ==============================================================================*/

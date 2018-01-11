@@ -183,7 +183,35 @@ form p {
 	font-weight: inherit;
 }
 
-/* Fix form placeholder color inside .style-dark .style-light. */
+/* Make placeholder text inside a .style-dark element a bit more subtle. */
+
+.style-dark ::placeholder {
+	color: #aaa !important;
+}
+
+.style-dark ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	color: #aaa !important;
+}
+
+.style-dark :-moz-placeholder { /* Firefox 18- */
+	color: #aaa !important;
+	opacity: 1;
+}
+
+.style-dark ::-moz-placeholder { /* Firefox 19+ */
+	color: #aaa !important;
+	opacity: 1;
+}
+
+.style-dark :-ms-input-placeholder { /* IE */
+	color: #aaa !important;
+}
+
+.style-dark ::-ms-input-placeholder { /* IE Edge */
+	color: #aaa !important;
+}
+
+/* Fix form placeholder color inside a .style-light element, even when the .style-light element is inside a .style-dark element. */
 
 .style-light ::placeholder {
 	color: #757575 !important;
@@ -211,6 +239,31 @@ form p {
 	color: #757575 !important;
 }
 
+/* Change the opacity of placeholder text on field focus. */
+
+:focus::placeholder {
+	opacity: 0.25;
+}
+
+:focus::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	opacity: 0.25;
+}
+
+:focus:-moz-placeholder { /* Firefox 18- */
+	opacity: 0.25;
+}
+
+:focus::-moz-placeholder { /* Firefox 19+ */
+	opacity: 0.25;
+}
+
+:focus:-ms-input-placeholder { /* IE */
+	opacity: 0.25;
+}
+
+:focus::-ms-input-placeholder { /* IE Edge */
+	opacity: 0.25;
+}
 
 /* Footer
 ==============================================================================*/

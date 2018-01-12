@@ -1,0 +1,9 @@
+/* Prevent Uncode from making focused form field border the accent color (from Theme Options) on focus. */
+.style-dark input:not([type='submit']):not([type='button']):not([type='number']):not([type='checkbox']):not([type='radio']):focus,
+.style-dark textarea:focus,
+.style-dark.style-override input:not([type='submit']):not([type='button']):not([type='number']):not([type='checkbox']):not([type='radio']):focus,
+.style-dark.style-override textarea:focus,
+.style-light .style-dark input:not([type='submit']):not([type='button']):not([type='number']):not([type='checkbox']):not([type='radio']):focus,
+.style-light .style-dark textarea:focus {
+	border-color: rgba(255, 255, 255, 0.25)
+}

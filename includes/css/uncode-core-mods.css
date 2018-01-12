@@ -239,7 +239,7 @@ form p {
 	color: #757575 !important;
 }
 
-/* Change the opacity of placeholder text on field focus. */
+/* Decrease the opacity of placeholder text on field focus. */
 
 :focus::placeholder {
 	opacity: 0.25;
@@ -264,6 +264,7 @@ form p {
 :focus::-ms-input-placeholder { /* IE Edge */
 	opacity: 0.25;
 }
+
 
 /* Footer
 ==============================================================================*/

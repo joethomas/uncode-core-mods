@@ -3,7 +3,7 @@
 	Plugin Name: Uncode Core Mods
 	Description: This plugin contains useful modifications for Uncode theme by Undsgn.
 	Plugin URI: https://github.com/joethomas/uncode-core-mods
-	Version: 1.1.7
+	Version: 1.1.8
 	Author: Joe Thomas
 	Author URI: https://github.com/joethomas
 	License: GNU General Public License v3.0
@@ -43,7 +43,7 @@ define( 'JOE_UCM_PREFIX', 'uncode-core-mods' );
 ==============================================================================*/
 
 require_once( 'includes/plugins-bootstrap.php' ); // controls bootstrapping for plugin mods
-require_once( 'includes/wpbakery-mods.php' ); // controls WP Bakery Page Builder modifications
+require_once( 'includes/wpbakery-mods.php' ); // controls WPBakery Page Builder modifications
 require_once( 'includes/updates.php' ); // controls plugin updates
 require_once( 'includes/scripts.php' ); // controls CSS and JS
 

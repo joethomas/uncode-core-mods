@@ -176,7 +176,7 @@ ul.icons li .fa {
 
 /* Share
 ------------------------------------------------------------------------------*/
-.share-button:not(.only-icon) .social ul li[class*=pinterest]:active {
+.share-button:not(.only-icon) .social ul li[class*=pinterest]:focus {
 	background-color: transparent;
 }
 
